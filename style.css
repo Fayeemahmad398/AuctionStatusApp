@@ -1,0 +1,143 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#navbar {
+  height: 60px;
+  border: 2px solid grey;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  font-size: large;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+
+.container {
+  border: 1px dotted red;
+  height: auto;
+  width: 100vw;
+}
+#getAuction {
+  margin: 0px auto;
+  margin-top: 80px;
+  display: block;
+  width: 130px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 2px 5px;
+  font-size: 16px;
+  background-color: rgb(253, 246, 246);
+}
+#getAuction:hover {
+  background-color: rgb(208, 187, 187);
+}
+.cards {
+  margin-top: 10px;
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  font-size: large;
+}
+#rs {
+  font-weight: bold;
+}
+#caseNo {
+  color: grey;
+  font-family: fantasy;
+}
+.eachCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(159, 172, 159);
+  width: 95%;
+  height: fit-content;
+  font-size: large;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(253, 246, 246);
+}
+h4 {
+  border-radius: 15px;
+  padding: 5px 4px;
+}
+.upperbox,
+.lowerbox {
+  margin: 30px 0px;
+}
+.status {
+  display: flex;
+  flex-direction: column;
+}
+.status p,
+h4 {
+  margin: 5px 0px;
+}
+.upperbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.lowerbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  font-size: 20px;
+}
+#date {
+  font-weight: bold;
+}
+.lowerbox p {
+  margin: 10px 0px;
+}
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .upperbox {
+    flex-direction: column;
+  }
+  h4 {
+    text-align: center;
+  }
+}
+/* .loader {
+  height: 40px;
+  width: 40px;
+  border: 8px solid rgb(150, 166, 174);
+  border-top-color: rgb(178, 199, 204);
+  border-bottom-color: rgb(178, 199, 204);
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  animation: linear loader 1s infinite;
+} */
+
+/* @keyframes loader {
+  from {
+    transform: (0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ */
